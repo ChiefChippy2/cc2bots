@@ -1,30 +1,30 @@
-body{
-        font-family: 'Noto Sans JP', sans-serif;
-        background-color: #7f5a83;
-        background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
-        height: 100em;
-    }
-    
-    #title{
-        font-size: 35pt;
-        color: white;
-    }
-    
-    .box-rounded{
-        border-radius: 25px;	
-        background-color: #7f5a83;
-        background-image: linear-gradient(315deg, #0d324d 0%, #7f5a83 74%);
-        color: white;
-    }
-    
-    a{
-        color: lightblue;
-    }
-    
-    a:visited{
-        color: pink;
-    }
-    
-    #me{
-        font-size: 20pt;
-    }
+        body{
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #7f5a83;
+            background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+            height: 100em;
+        }
+        
+        #title{
+            font-size: 35pt;
+            color: white;
+        }
+        
+        .box-rounded{
+            border-radius: 25px;	
+            background-color: #7f5a83;
+            background-image: linear-gradient(315deg, #0d324d 0%, #7f5a83 74%);
+            color: white;
+        }
+        
+        a{
+            color: lightblue;
+        }
+        
+        a:visited{
+            color: pink;
+        }
+        
+        .me{
+            font-size: 20pt;
+        }
