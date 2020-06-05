@@ -1,8 +1,8 @@
 async function bSta(){
 let a;
 let b;
-Promise.race([new Promise((resolve) => {
-            setTimeout(resolve,3000)}),
+Promise.race([new Promise((resolve,rej) => {
+            setTimeout(rej,3000)}),
 new Promise((re,rj)=>{
  a = (new Date()).getTime();
  fetch("https://tangy-bold-elderberry.glitch.me",{mode:"no-cors"}).then(r=>r.text()).then(r=>{
