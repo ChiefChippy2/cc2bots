@@ -1,5 +1,4 @@
 /*w3schools shit yay*/
-document.onload=function(){
 var modal = document.getElementById("myModal");
 
 
@@ -27,10 +26,12 @@ window.onclick = function(event) {
 }
 document.querySelector("#invbut").onclick=()=>{
 modal.style.display="none";
-document.cookie="disc=innit;max-age:"+60*60*24*365.25
+  
+document.cookie="disc=innit;max-age:"+60*60*24*365.25;
+  window.open("https://discord.gg/ehjxjyW","_blank")
 //very important 1/4 days
 }
 
 if(document.cookie.includes("disc=innit")||document.cookie.includes("disc=innit")) modal.style.display="none";
 
-}
+
