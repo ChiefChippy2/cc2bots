@@ -59,3 +59,35 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+#myModal {
+    background-color: #2853b0;
+    color: white;
+    font-weight: 700;
+    border-radius: 4px 4px;
+    border: 1px solid black;
+ 
+ 
+ 
+}
+ 
+#invbut {
+ 
+    background: rgb(238, 218, 2);
+    background: linear-gradient(166deg, rgba(238, 218, 2, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(255, 217, 0, 1) 100%);
+}
+ 
+button {
+    width: 250px;
+    height: 50px;
+    border-radius: 20px 20px;
+    font-size: 14px;
+    font-weight: 700;
+ 
+}
+ 
+#fuc {
+ 
+    background: rgb(128, 127, 125);
+    background: linear-gradient(166deg, rgba(128, 127, 125, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(212, 211, 210, 1) 100%);
+}
