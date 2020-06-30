@@ -1,5 +1,5 @@
 /*w3schools shit yay*/
-document.body.onload=function(){
+document.addEventListener("DOMContentLoaded",function(){
 var modal = document.getElementById("myModal");
 
 
@@ -36,4 +36,4 @@ document.cookie="disc=innit;max-age:"+60*60*24*365.25;
 if(document.cookie.includes("disc=innit")||document.cookie.includes("disc=innit")) modal.style.display="none";
 
 
-}
+})
