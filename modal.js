@@ -32,8 +32,15 @@ document.cookie="disc=innit;max-age:"+60*60*24*365.25;
   window.open("https://discord.gg/ehjxjyW","_blank")
 //very important 1/4 days
 }
+document.querySelector("#fuc").onclick=()=>{
+modal.style.display="none";
+  
+document.cookie="disc=nit;max-age:"+60*60*24*7;
+//  window.open("https://discord.gg/ehjxjyW","_blank")
+//very important 1/4 days
+}
 
-if(document.cookie.includes("disc=innit")||document.cookie.includes("disc=innit")) modal.style.display="none";
+if(document.cookie.includes("disc=innit")||document.cookie.includes("disc=nit")) modal.style.display="none";
 
 
 })
