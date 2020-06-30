@@ -60,7 +60,7 @@
   cursor: pointer;
 }
 
-#myModal {
+.modalContent {
     background-color: #2853b0;
     color: white;
     font-weight: 700;
