@@ -30,3 +30,7 @@ modal.style.display="none";
 document.cookie="disc=innit;max-age:"+60*60*24*365.25
 //very important 1/4 days
 }
+window.onload=()=>{
+if(document.cookie.includes("disc=innit")||document.cookie.includes("disc=innit")) modal.style.display="none";
+
+}
