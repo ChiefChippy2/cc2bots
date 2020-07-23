@@ -1,0 +1,672 @@
+{
+  "global": {
+    "gamesplayed": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Global&type=GamesPlayed",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Global&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Global&type=GemsEarned",
+    "timeingame": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Global&type=TimeInGame",
+    "timeinhub": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Global&type=TimeInHub",
+    "dailyreward": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Global&type=DailyReward",
+    "dailyvote": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Global&type=DailyVote"
+  },
+  "track": {
+    "unlucky": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=track&type=Unlucky",
+    "party-animal": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=track&type=Party-Animal",
+    "lucky": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=track&type=Lucky",
+    "treasure-hunter": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=track&type=Treasure-Hunter",
+    "warrior": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=track&type=Warrior",
+    "gem-collector": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=track&type=gem-collector",
+    "sweet-tooth": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=track&type=sweet-tooth",
+    "peaceful": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=track&type=Peaceful",
+    "holiday-cheer": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=track&type=holiday-cheer"
+  },
+  "one in the quiver": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=one in the quiver",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=One In The Quiver&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=One In The Quiver&type=Kills",
+    "assists": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=One In The Quiver&type=Assists",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=One In The Quiver&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=One In The Quiver&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=One In The Quiver&type=GemsEarned"
+  },
+  "death tag": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=death tag",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Death Tag&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Death Tag&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Death Tag&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Death Tag&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Death Tag&type=GemsEarned"
+  },
+  "evolution": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Evolution&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Evolution&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Evolution&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Evolution&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Evolution&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Evolution&type=GemsEarned"
+  },
+  "bomb lobbers": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=bomb lobbers",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bomb Lobbers&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bomb Lobbers&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bomb Lobbers&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bomb Lobbers&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bomb Lobbers&type=GemsEarned"
+  },
+  "super spleef": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=super spleef",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=super Spleef&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Super Spleef&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Super Spleef&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Super Spleef&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Super Spleef&type=GemsEarned"
+  },
+  "sneaky assassins": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=sneaky assassins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Sneaky Assassins&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Sneaky Assassins&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Sneaky Assassins&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Sneaky Assassins&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Sneaky Assassins&type=GemsEarned"
+  },
+  "sheep quest": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=sheep quest",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Sheep Quest&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Sheep Quest&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Sheep Quest&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Sheep Quest&type=ExpEarned"
+  },
+  "runner": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=runner&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Runner&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Runner&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Runner&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Runner&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Runner&type=GemsEarned"
+  },
+  "micro battle": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=Micro Battle&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Micro Battle&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Micro Battle&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Micro Battle&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Micro Battle&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Micro Battle&type=GemsEarned"
+  },
+  "gladiators": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=gladiators&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Gladiators&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Gladiators&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Gladiators&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Gladiators&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Gladiators&type=GemsEarned"
+  },
+  "bacon brawl": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=bacon brawl",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bacon Brawl&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bacon Brawl&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bacon Brawl&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bacon Brawl&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bacon Brawl&type=GemsEarned"
+  },
+  "turf wars": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=turf wars",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Turf Wars&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Turf Wars&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Turf Wars&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Turf Wars&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Turf Wars&type=GemsEarned"
+  },
+  "dragon escape": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=dragon escape",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Dragon Escape&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Dragon Escape&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Dragon Escape&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Dragon Escape&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Dragon Escape&type=GemsEarned"
+  },
+  "dragons": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=dragons&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Dragons&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Dragons&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Dragons&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Dragons&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Dragons&type=GemsEarned"
+  },
+  "super paintball": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=super paintball",
+    "bestwinstreak": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=super paintball&type=BestWinStreak",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Super Paintball&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Super Paintball&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Super Paintball&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Super Paintball&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Super Paintball&type=GemsEarned"
+  },
+  "snake": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=snake&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Snake&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Snake&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Snake&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Snake&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Snake&type=GemsEarned"
+  },
+  "monster maze": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=monster maze",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Monster Maze&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Monster Maze&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Monster Maze&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Monster Maze&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Monster Maze&type=GemsEarned"
+  },
+  "milk the cow": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Milk The Cow&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Milk The Cow&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Milk The Cow&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Milk The Cow&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Milk The Cow&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Milk The Cow&type=GemsEarned"
+  },
+  "tug of wool": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Tug Of Wool&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Tug Of Wool&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Tug Of Wool&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Tug Of Wool&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Tug Of Wool&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Tug Of Wool&type=GemsEarned"
+  },
+  "wither assault": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Wither Assault&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Wither Assault&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Wither Assault&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Wither Assault&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Wither Assault&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Wither Assault&type=GemsEarned"
+  },
+  "squid shooter": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Squid Shooter&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Squid Shooter&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Squid Shooter&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Squid Shooter&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Squid Shooter&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Squid Shooter&type=GemsEarned"
+  },
+  "super smash mobs": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=Super Smash Mobs&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Super Smash Mobs&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Super Smash Mobs&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Super Smash Mobs&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Super Smash Mobs&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Super Smash Mobs&type=GemsEarned"
+  },
+  "super smash mobs teams": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=Super Smash Mobs Teams&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Super Smash Mobs Teams&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Super Smash Mobs Teams&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Super Smash Mobs Teams&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Super Smash Mobs Teams&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Super Smash Mobs Teams&type=GemsEarned"
+  },
+  "speed builders": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=Speed Builders&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Speed Builders&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Speed Builders&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Speed Builders&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Speed Builders&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Speed Builders&type=GemsEarned",
+    "perfectbuild": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Speed Builders&type=PerfectBuild"
+  },
+  "nano games": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=nano games",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Nano Games&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Nano Games&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Nano Games&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Nano Games&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Nano Games&type=GemsEarned"
+  },
+  "minestrike": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=Minestrike&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Minestrike&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Minestrike&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Minestrike&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Minestrike&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Minestrike&type=GemsEarned"
+  },
+  "bridges": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=The Bridges&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=The Bridges&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=The Bridges&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=The Bridges&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=The Bridges&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=The Bridges&type=GemsEarned"
+  },
+  "draw my thing": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=Draw My Thing&",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Draw My Thing&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Draw My Thing&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Draw My Thing&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Draw My Thing&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Draw My Thing&type=GemsEarned"
+  },
+  "survival games": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=Survival Games&",
+    "bestwinstreak": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Survival Games&type=BestWinStreak",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Survival Games&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Survival Games&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Survival Games&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Survival Games&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Survival Games&type=GemsEarned"
+  },
+  "survival games teams": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=Survival Games Teams&",
+    "bestwinstreak": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Survival Games Teams&type=BestWinStreak",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Survival Games Teams&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Survival Games Teams&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Survival Games Teams&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Survival Games Teams&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Survival Games Teams&type=GemsEarned"
+  },
+  "champions domination": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions Domination&",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions Domination&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions Domination&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions Domination&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions Domination&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions Domination&type=GemsEarned"
+  },
+  "champions ctf": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions CTF&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions CTF&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions CTF&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions CTF&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions CTF&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions CTF&type=GemsEarned"
+  },
+  "skywars": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=Skywars",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Skywars&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Skywars&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Skywars&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Skywars&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Skywars&type=GemsEarned"
+  },
+  "skywars teams": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Skywars Teams&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Skywars Teams&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Skywars Teams&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Skywars Teams&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Skywars Teams&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Skywars Teams&type=GemsEarned"
+  },
+  "block hunt": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=block Hunt&",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=block Hunt&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=block Hunt&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=block Hunt&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=block Hunt&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=block Hunt&type=GemsEarned"
+  },
+  "master builders": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=Master Builders&",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Master Builders&type=Losses",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Master Builders&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Master Builders&type=GemsEarned"
+  },
+  "cake wars standard": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=Cake Wars Standard",
+    "bestwinstreak": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Cake Wars Standard&type=BestWinStreak",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Cake Wars Standard&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Cake Wars Standard&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Cake Wars Standard&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Cake Wars Standard&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Cake Wars Standard&type=GemsEarned",
+    "bites": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Cake Wars standard&type=Bites",
+    "finalkills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Cake Wars standard&type=FinalKills"
+  },
+  "cake wars duos": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=Cake Wars Duos",
+    "bestwinstreak": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Cake Wars Duos&type=BestWinStreak",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Cake Wars Duos&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Cake Wars Duos&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Cake Wars Duos&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Cake Wars Duos&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Cake Wars Duos&type=GemsEarned",
+    "bites": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Cake Wars Duos&type=Bites",
+    "finalkills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Cake Wars Duos&type=FinalKills"
+  },
+  "clans": {
+    "timeplaying": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Clans&type=TimePlaying"
+  },
+  "heroes of gwen": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Heroes Of GWEN&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Heroes Of GWEN&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Heroes Of GWEN&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Heroes Of GWEN&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Heroes Of GWEN&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Heroes Of GWEN&type=GemsEarned",
+    "goldearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Heroes Of GWEN&type=GoldEarned"
+  },
+  "wizards": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=wizards&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Wizards&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Wizards&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Wizards&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Wizards&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Wizards&type=GemsEarned"
+  },
+  "skyfall": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=skyfall&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Skyfall&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Skyfall&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Skyfall&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Skyfall&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Skyfall&type=GemsEarned"
+  },
+  "skyfall teams": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Skyfall Teams&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Skyfall Teams&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Skyfall Teams&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Skyfall Teams&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Skyfall Teams&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Skyfall Teams&type=GemsEarned"
+  },
+  "castle assault": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=castle assault",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Assault&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Assault&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Assault&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Assault&type=ExpEarned",
+    "crownsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Assault&type=CrownsEarned"
+  },
+  "castle assault tdm": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Assault TDM&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Assault TDM&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Assault TDM&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Assault TDM&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Assault TDM&type=ExpEarned",
+    "crownsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Assault TDM&type=CrownsEarned"
+  },
+  "castle siege": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=castle siege",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Siege&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Siege&type=Kills",
+    "assists": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Siege&type=Assists",
+    "assassin": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Siege&type=Assassin",
+    "bloodthirsty": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Siege&type=BloodThirsty",
+    "closecall": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Siege&type=CloseCall",
+    "fortheking": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Siege&type=ForTheKing",
+    "horsekiller": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Siege&type=HorseKiller",
+    "kingfull": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Siege&type=KingFull",
+    "kingguard": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Siege&type=KingGuard",
+    "kingslayer": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Siege&type=KingSlayer",
+    "tntkiller": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Siege&type=TNTKIller",
+    "wolfkill": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Siege&type=WolfKill",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Siege&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Siege&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Castle Siege&type=GemsEarned"
+  },
+  "champions tdm": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions TDM&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions TDM&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions TDM&type=Kills",
+    "assists": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions TDM&type=assists",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions TDM&type=Deaths",
+    "ace": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions TDM&type=Ace",
+    "assassination": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions TDM&type=Assassination",
+    "earthquake": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions TDM&type=Earthquake",
+    "flawlessvictory": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions TDM&type=FlawlessVictory",
+    "masselectrocution": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions TDM&type=MassElectrocution",
+    "thelongestshot": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions TDM&type=TheLongestShot",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions TDM&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Champions TDM&type=GemsEarned"
+  },
+  "bawk bawk battles": {
+    "wins": "https://xen.mineplex.com/assets/www-mp/webtest/testy.php?game=bawk bawk battles",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bawk Bawk Battles&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bawk Bawk Battles&type=Kills",
+    "assists": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bawk Bawk Battles&type=assists",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bawk Bawk Battles&type=Deaths",
+    "veteran": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bawk Bawk Battles&type=Veteran",
+    "bouncingshadow": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bawk Bawk Battles&type=bouncingshadow",
+    "dragonking": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bawk Bawk Battles&type=dragonking",
+    "elitearcher": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bawk Bawk Battles&type=elitearcher",
+    "milkman": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bawk Bawk Battles&type=milkman",
+    "pinatamaster": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bawk Bawk Battles&type=pinatamaster",
+    "pixelninja": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bawk Bawk Battles&type=pixelninja",
+    "speedybuilders": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bawk Bawk Battles&type=SpeedyBuilders",
+    "surfup": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bawk Bawk Battles&type=SurfUp",
+    "tagmaster": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bawk Bawk Battles&type=Tagmaster",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bawk Bawk Battles&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Bawk Bawk Battles&type=GemsEarned"
+  },
+  "a barbarians life": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=A Barbarians Life&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=A Barbarians Life&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=A Barbarians Life&type=Kills",
+    "assists": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=A Barbarians Life&type=Assists",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=A Barbarians Life&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=A Barbarians Life&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=A Barbarians Life&type=GemsEarned"
+  },
+  "brawl": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Brawl&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Brawl&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Brawl&type=Kills",
+    "assists": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Brawl&type=Assists",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Brawl&type=Deaths",
+    "unstoppable": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Brawl&type=Unstoppable",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Brawl&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Brawl&type=GemsEarned"
+  },
+  "gravity": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Gravity&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Gravity&type=Losses",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Gravity&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Gravity&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Gravity&type=GemsEarned"
+  },
+  "hoops": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Hoops&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Hoops&type=Losses",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Hoops&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Hoops&type=GemsEarned"
+  },
+  "mc league": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=MC League&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=MC League&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=MC League&type=Kills",
+    "assists": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=MC League&type=assists",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=MC League&type=Deaths",
+    "altarbuilder": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=MC League&type=AltarBuilder",
+    "headhunter": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=MC League&type=HeadHunter",
+    "savingup": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=MC League&type=SavingUp",
+    "towerdefender": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=MC League&type=TowerDefender",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=MC League&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=MC League&type=GemsEarned"
+  },
+  "mineware": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Mineware&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Mineware&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Mineware&type=Kills",
+    "assists": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Mineware&type=assists",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Mineware&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Mineware&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Mineware&type=GemsEarned"
+  },
+  "one in the quiver payload": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=One In The Quiver Payload&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=One In The Quiver Payload&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=One In The Quiver Payload&type=Kills",
+    "assists": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=One In The Quiver Payload&type=assists",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=One In The Quiver Payload&type=Deaths",
+    "assassin": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=One In The Quiver Payload&type=assassin",
+    "blossom": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=One In The Quiver Payload&type=Blossom",
+    "bow": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=One In The Quiver Payload&type=Bow",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=One In The Quiver Payload&type=ExpEarned'",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=One In The Quiver Payload&type=GemsEarned"
+  },
+  "search and destroy": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Search And Destroy&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Search And Destroy&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Search And Destroy&type=Kills",
+    "assists": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Search And Destroy&type=Assists",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Search And Destroy&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Search And Destroy&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Search And Destroy&type=GemsEarned"
+  },
+  "snow fight": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Snow Fight&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Snow Fight&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Snow Fight&type=Kills",
+    "assists": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Snow Fight&type=Assists",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Snow Fight&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Snow Fight&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Snow Fight&type=GemsEarned"
+  },
+  "type wars": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Type Wars&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Type Wars&type=Losses",
+    "demon": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Type Wars&type=Demon",
+    "dumbledont": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Type Wars&type=Dumbledont",
+    "hoarder": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Type Wars&type=Hoarder",
+    "minionkills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Type Wars&type=MinionKills",
+    "nuke": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Type Wars&type=Nuke",
+    "timeingame": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Type Wars&type=TimeInGame",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Type Wars&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Type Wars&type=GemsEarned"
+  },
+  "ultra hardcore": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore&type=Kills",
+    "assists": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore&type=Assists",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore&type=GemsEarned"
+  },
+  "ultra hardcore solo": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore Solo&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore Solo&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore Solo&type=Kills",
+    "assists": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore Solo&type=Assists",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore Solo&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore Solo&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore Solo&type=GemsEarned"
+  },
+  "ultra hardcore teams speed": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore Teams Speed&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore Teams Speed&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore Teams Speed&type=Kills",
+    "assists": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore Teams Speed&type=Assists",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore Teams Speed&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore Teams Speed&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore Teams Speed&type=GemsEarned"
+  },
+  "ultra hardcore solo speed": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore Solo Speed&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore Solo Speed&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore Solo Speed&type=Kills",
+    "assists": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore Solo Speed&type=Assists",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore Solo Speed&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore Solo Speed&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Ultra Hardcore Solo Speed&type=GemsEarned"
+  },
+  "zombie survival": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Zombie Survival&type=Wins",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Zombie Survival&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Zombie Survival&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Zombie Survival&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Zombie Survival&type=GemsEarned"
+  },
+  "strike games": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Strike Games&type=Wins",
+    "bestwinstreak": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Strike Games&type=BestWinStreak",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Strike Games&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Strike Games&type=Kills",
+    "assists": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Strike Games&type=Assists",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Strike Games&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Strike Games&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Strike Games&type=GemsEarned"
+  },
+  "gem hunters": {
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Gem Hunters&type=GemsEarned",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Gem Hunters&type=Kills",
+    "questscompleted": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Gem Hunters&type=QuestsCompleted",
+    "chestsopened": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Gem Hunters&type=ChestsOpened"
+  },
+  "halloween horror": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Halloween Horror&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Halloween Horror&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Halloween Horror&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Halloween Horror&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Halloween Horror&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Halloween Horror&type=GemsEarned"
+  },
+  "christmas chaos": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Christmas Chaos&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Christmas Chaos&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Christmas Chaos&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Christmas Chaos&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Christmas Chaos&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Christmas Chaos&type=GemsEarned"
+  },
+  "christmas chaos ii": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Christmas Chaos II&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Christmas Chaos II&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Christmas Chaos II&type=Kills",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Christmas Chaos II&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Christmas Chaos II&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Christmas Chaos II&type=GemsEarned"
+  },
+  "valentines vendetta": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Valentines Vendetta&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Valentines Vendetta&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Valentines Vendetta&type=Kills",
+    "assists": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Valentines Vendetta&type=Assists",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Valentines Vendetta&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Valentines Vendetta&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Valentines Vendetta&type=GemsEarned"
+  },
+  "alien invasion": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Alien Invasion&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Alien Invasion&type=Losses",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Alien Invasion&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Alien Invasion&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Alien Invasion&type=GemsEarned"
+  },
+  "battle royale": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Battle Royale&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Battle Royale&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Battle Royale&type=Kills",
+    "assists": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Battle Royale&type=Assists",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Battle Royale&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Battle Royale&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Battle Royale&type=GemsEarned"
+  },
+  "halloween havoc": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Halloween Havoc&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Halloween Havoc&type=Losses",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Halloween Havoc&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Halloween Havoc&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Halloween Havoc&type=GemsEarned"
+  },
+  "rose rush": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Rose Rush&type=Wins",
+    "bestwinstreak": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Rose Rush&type=BestWinStreak",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Rose Rush&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Rose Rush&type=Kills",
+    "assists": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Rose Rush&type=Assists",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Rose Rush&type=Deaths",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Rose Rush&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Rose Rush&type=GemsEarned"
+  },
+  "area 51 raid": {
+    "wins": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Area 51 Raid&type=Wins",
+    "losses": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Area 51 Raid&type=Losses",
+    "kills": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Area 51 Raid&type=Kills",
+    "assists": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Area 51 Raid&type=Assists",
+    "deaths": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Area 51 Raid&type=Deaths",
+    "firstblood": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Area 51 Raid&type=FirstBlood",
+    "chopperacquired": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Area 51 Raid&type=ChopperAcquired",
+    "patriotact": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Area 51 Raid&type=PatriotAct",
+    "expearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Area 51 Raid&type=ExpEarned",
+    "gemsearned": "https://www.mineplex.com/assets/www-mp/webtest/testy.php?game=Area 51 Raid&type=GemsEarned"
+  }
+}
