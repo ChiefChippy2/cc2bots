@@ -1,0 +1,32 @@
+/* i wrote this oml */
+table {
+font-family: 'Raleway', sans-serif;
+background-color: #FFFFFF;
+text-align: center;
+border-collapse: collapse;
+}
+table td, table th {
+padding: 3px 2px;
+}
+table tbody td {
+font-size: 13px;
+color: #1E282F;
+}
+table tr:nth-child(even) {
+background: #E6E6E6;
+}
+.LeaderboardsHead{
+background: #1E282F;
+border-bottom: 3px solid #FAA000;
+}
+table th {
+font-size: 15px;
+font-weight: bold;
+color: #E6E6E6;
+text-align: center;
+/* border-left: 2px solid #4A4A4A;*/
+}
+
+table th:first-child {
+border-left: none;
+}
