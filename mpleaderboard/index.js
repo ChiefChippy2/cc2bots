@@ -18,7 +18,7 @@ function entrySuggest(ev){
   /*use the fuse
   1st check for alias(es). Map it to an object with type : alias, value : the actual alias, fullName : the full name*/
   const su=document.qs(".suggest");
-  su.style.display="yes";
+  su.style="display:yes;";
   suggestions=suggestions.concat(Object.keys(window.alias)
                      .filter(x=>x.startsWith(va))
                      .map(e=>({type:"alias",value:e,fullName:window.alias[e]})))
@@ -47,7 +47,7 @@ function entrySuggest(ev){
 function handleSuggest(){
   document.qs("#entry").value=this.querySelector(".valu");
   document.qs(".suggest").style.display="none";
-  
+  checkValid()
 }
 
 function checkValid(){
