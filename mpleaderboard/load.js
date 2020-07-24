@@ -9,7 +9,7 @@ needed
           })))
 .then(e=>{
           e.forEach(a=>window[a[0]]=a[1]
-          
+          )
           window.dispatchEvent(new Event("AllLoaded"))})
 //Tmw = timeout warning ( to prompt for reload if it takes too long )
 window.tmw=window.setTimeout(
