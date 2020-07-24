@@ -4,13 +4,16 @@ Promise.all(
 needed
 .map(x=>fetch(x)
 .then(r=>r.json())
-.then(re=>res(window[x.split(".")[0]]=re))
-.catch(e=>{if(confirm("Uh oh, something went wrong whilst trying to load one of all of the resources. Retry now?")) window.reload()
+.then(re=>res([x.split(".")[0],re]))
+.catch(e=>{if(confirm("Uh oh, something went wrong whilst trying to load one of all of the resources. Retry now?")) location.reload()
           })))
-.then(e=>window.dispatchEvent(new Event("AllLoaded")))
+.then(e=>{
+          e.forEach(a=>window[a[0]]=a[1]
+          
+          window.dispatchEvent(new Event("AllLoaded"))})
 //Tmw = timeout warning ( to prompt for reload if it takes too long )
 window.tmw=window.setTimeout(
-()=>{if(confirm("Uh oh, something went wrong whilst trying to load one of all of the resources. Retry now?")) window.reload()
+()=>{if(confirm("Uh oh, something went wrong whilst trying to load one of all of the resources. Retry now?")) location.reload()
     },10*1000)
 
 window.addEventListener("AllLoaded",()=>{
