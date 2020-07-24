@@ -7,7 +7,7 @@ needed
 .then(re=>res(window[x.split(".")[0]]=re))
 .catch(e=>{if(confirm("Uh oh, something went wrong whilst trying to load one of all of the resources. Retry now?")) window.reload()
           })))
-.then(e=>window.dispatchEvent("AllLoaded"))
+.then(e=>window.dispatchEvent(new Event("AllLoaded")))
 //Tmw = timeout warning ( to prompt for reload if it takes too long )
 window.tmw=window.setTimeout(
 ()=>{if(confirm("Uh oh, something went wrong whilst trying to load one of all of the resources. Retry now?")) window.reload()
@@ -25,6 +25,6 @@ window.lbsearch = new Fuse(Object.keys(window.lbs), options)
 document.querySelector(".bod").style.display="yes";
 document.querySelector(".loading").style.display="none";
 //Emit ready
-window.dispatchEvent("ready")
+window.dispatchEvent(new Event("ready"))
 })
   
