@@ -13,7 +13,7 @@ window.addEventListener("ready",()=>{
 function entrySuggest(ev){
   let suggestions=[];
   const va=this.value.toLowerCase();
-  if(va) document.qs(".sub").disabled="false";
+  if(va) document.qs(".sub").disabled=false;
   if(!va) return document.qs(".sub").disabled="disabled";
   /*use the fuse
   1st check for alias(es). Map it to an object with type : alias, value : the actual alias, fullName : the full name*/
