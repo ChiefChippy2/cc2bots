@@ -21,7 +21,7 @@ function entrySuggest(ev){
                      .filter(x=>x.startsWith(va))
                      .map(e=>({type:"alias",value:e,fullName:window.alias[e]})))
   /* now, add the fuse*/
-  suggestions.concat(fuse.search(va)
+  suggestions.concat(window.lbsearch.search(va)
                      .sort((a,b)=>a.score-b.score)
                      .map(x=>({type:"Game",value:x.item})))
   /*if user pressed tab, autocomplete*/
