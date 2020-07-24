@@ -17,11 +17,13 @@ function entrySuggest(ev){
   if(!va) return document.qs(".sub").disabled="disabled";
   /*use the fuse
   1st check for alias(es). Map it to an object with type : alias, value : the actual alias, fullName : the full name*/
-  suggestions.concat(Object.keys(window.alias)
+  const su=document.qs(".suggest");
+  su.style.display="yes";
+  suggestions=suggestions.concat(Object.keys(window.alias)
                      .filter(x=>x.startsWith(va))
                      .map(e=>({type:"alias",value:e,fullName:window.alias[e]})))
   /* now, add the fuse*/
-  suggestions.concat(window.lbsearch.search(va)
+  suggestions=suggestions.concat(window.lbsearch.search(va)
                      .sort((a,b)=>a.score-b.score)
                      .map(x=>({type:"Game",value:x.item})))
   /*if user pressed tab, autocomplete*/
@@ -29,7 +31,6 @@ function entrySuggest(ev){
   /* finally, check if suggestions is empty*/
   if(suggestions.length===0) suggestions.push({type:"Warning",value:"No matches"})
   /*and add to the html.. oops forgot :p*/
-  const su=document.qs(".suggest");
   su.innerHTML="";
   for(let ele of suggestions){
    let a = document.createElement("div");
@@ -41,7 +42,7 @@ function entrySuggest(ev){
    su.appendChild(document.createElement("br"))
     
   } 
-  su.style.display="yes";
+  
 }
 function handleSuggest(){
   document.qs("#entry").value=this.querySelector(".valu");
