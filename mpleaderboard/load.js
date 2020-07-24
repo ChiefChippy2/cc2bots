@@ -24,6 +24,7 @@ window.on("AllLoaded",()=>{
 window.lbsearch = new Fuse(Object.keys(window.lbs), options)
 //now show the body div
 document.querySelector(".bod").style.display="yes";
+document.querySelector(".loading").style.display="none";
 //emit ready
 windiw.emit("ready")
 })
