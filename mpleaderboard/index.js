@@ -52,13 +52,13 @@ function handleSuggest(){
 
 function checkValid(){
  const inp=document.qs("#entry").value.toLowerCase();
-  const game=window.alias[inp].replace(/[A-Z]/g,x=>" "+x.toLowerCase())||inp;
+  const game=window.alias[inp]||inp;
   /* check if invalid. if yes, x*/
   if(!Object.keys(window.lbs).includes(game)) return document.qs(".errorInput").innerHTML="&times; Invalid Game Name.";
 const sel=document.qs("#sel");
 /* Prompt*/
+sel.innerHTML="";
 for(const type of Object.keys(window.lbs[game])){
-  sel.innerHTML="";
   const chil=document.createElement("option");
   chil.value=type;
   chil.innerHTML=type;
@@ -78,7 +78,7 @@ function validEntry(){
   const type=sel.options[sel.selectedIndex].text;
   /*Also Check... you never know*/
   if(!window.lbs[game][type]) return document.qs(".errorInput").innerHTML="&times; Invalid Game Type. Weird.";
-  fetch(window.lbs[game][type])
+  fetch("https://cors-anywhere.herokuapp.com/"+window.lbs[game][type])
   .then(r=>r.text())
   .then(re=>document.qs(".leaderboards").innerHTML=re)
   
