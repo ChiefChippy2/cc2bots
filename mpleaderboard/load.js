@@ -4,7 +4,7 @@ Promise.all(
 needed
 .map(x=>fetch(x)
 .then(r=>r.json())
-.then(re=>res([x.split(".")[0],re]))
+.then(re=>[x.split(".")[0],re])
 .catch(e=>{if(confirm("Uh oh, something went wrong whilst trying to load one of all of the resources. Retry now?")) location.reload()
           })))
 .then(e=>{
