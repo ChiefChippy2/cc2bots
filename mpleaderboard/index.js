@@ -45,7 +45,7 @@ function entrySuggest(ev){
   
 }
 function handleSuggest(){
-  document.qs("#entry").value=this.querySelector(".valu");
+  document.qs("#entry").value=this.querySelector(".valu").innerText;
   document.qs(".suggest").style.display="none";
   checkValid()
 }
