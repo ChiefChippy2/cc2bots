@@ -12,6 +12,7 @@ window.addEventListener("ready",()=>{
 /*Suggest alias/game names when user is typing*/
 function entrySuggest(ev){
   let suggestions=[];
+  document.qs(".errorInput").innerHTML="";
   const va=this.value.toLowerCase();
   if(va) document.qs(".sub").disabled=false;
   if(!va) return document.qs(".sub").disabled="disabled";
