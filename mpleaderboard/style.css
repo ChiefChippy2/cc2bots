@@ -10,3 +10,29 @@ color:#1c5cb0;
 font-size:100px;
 font-weight:750px;
 }
+.errorInput{
+color:#ff0000;
+
+}
+.suggest{
+  max-height:500px;
+  overflow-y:scroll;
+  background-color:#44644a;
+  color:#fefefe;
+  border:solid 3px #fff;
+  border-radius:0px 0px 20px 20px; 
+}
+.type{
+  border-radius:2px;
+  
+  
+}
+.alias{
+ background-color:#e82adb
+}
+.Warning{
+  background-color:#f00
+}
+.Game{
+background-color:#7bd468
+}
