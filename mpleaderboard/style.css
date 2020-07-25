@@ -16,6 +16,7 @@ color:#ff0000;
 }
 .suggest{
   max-height:200px;
+  width:200px;
   overflow-y:scroll;
   background-color:#383838;
   color:#fefefe;
@@ -37,4 +38,9 @@ border-radius:2px;
 }
 .Game{
 background-color:#7bd468
+}
+.smal{
+  font-size:8px;
+  color:light-gray;
+  font-style:italic;
 }
