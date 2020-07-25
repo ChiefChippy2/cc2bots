@@ -35,7 +35,7 @@ function entrySuggest(ev){
   su.innerHTML="";
   for(let ele of suggestions){
    let a = document.createElement("div");
-   a.class="suggestitem";
+   a.className="suggestitem";
    a.innerHTML=`<span class="type ${ele.type}">${ele.type}</span> - <span class="valu">${ele.value}</span>`;
    if(ele.type==="alias") a.innerHTML+=`<br><span class="smal">AKA ${ele.fullName}</span>`;
    if(ele.type!=="Warning") a.onclick = handleSuggest;
