@@ -97,6 +97,7 @@ trs[i].remove()
 }}
 cc.innerHTML+=dd
  /*Only preserve the table*/
+   console.log(document.qs(".leaderboardTable").outerHTML)
    lead.innerHTML=document.qs(".leaderboardTable").outerHTML
     /*Show result*/
    lead.style.display="block";
