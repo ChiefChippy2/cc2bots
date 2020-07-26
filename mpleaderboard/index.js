@@ -83,17 +83,20 @@ function validEntry(){
   .then(r=>r.text())
   .then(re=>{
    /*NoScript*/
-   document.qs(".leaderboards").innerHTML=re.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,"")
+   const lead=document.qs(".leaderboards")
+   lead.innerHTML=re.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,"")
             /*Make the table look better*/
-            let trs= document.qs(".leaderboards").querySelectorAll("tr")
-let cc=document.querySelector("tbody")
+            let trs= lead.querySelectorAll("tr")
+let cc=lead.qs("tbody")
 var dd=""
 for(let i=101;i<trs.length;i++){
 if(trs[i].className!="LeaderboardsHead"){
 dd+=trs[i].outerHTML
 trs[i].remove()
 }}
+cc.innerHTML+=dd
  for(let i =1;i<=10;i++) document.qs("#"+i).remove();
+   for(let i =2;i<=10;i++) document.qs(".LeaderPage"+i).remove();
             
             })
   
