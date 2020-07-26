@@ -99,8 +99,45 @@ cc.innerHTML+=dd
  /*Only preserve the table*/
    console.log(document.qs(".leaderboardTable").outerHTML)
    lead.innerHTML=document.qs(".leaderboardTable").outerHTML
+   /*Adapt time leaderboards so it doesn't just show the seconds*/
+   if(type.includes("time")) Array.from(lead.querySelectorAll("tr")).forEach(a=>{
+    let el=Array.from(a.querySelectorAll("td")).reverse()[0]
+    el.innerHTML=secStr(parseInt(el.innerText.replace(/[^0-9]+/g,"")));
+   });
     /*Show result*/
    lead.style.display="block";
             })
   
 }
+  function secStr (a,short) {
+    // adapted from SO 
+
+    function numberEnding (number) {
+        return (number > 1&&!short) ? 's' : '';
+    }
+   var keywords=short?[" year"," day"," hour"," minute", " second"]:[" y"," d"," h"," m"," s"]
+var str=""
+    var temp = a;
+    var years = Math.floor(temp / 31536000);
+    if (years) {
+        str+= years + keywords[0] + numberEnding(years);
+    }
+    //TODO: Months! Maybe weeks? 
+    var days = Math.floor((temp %= 31536000) / 86400);
+    if (days) {
+        str+= days + keywords[1] + numberEnding(days);
+    }
+    var hours = Math.floor((temp %= 86400) / 3600);
+    if (hours) {
+        str+= hours + keywords[2] + numberEnding(hours);
+    }
+    var minutes = Math.floor((temp %= 3600) / 60);
+    if (minutes) {
+        str+= minutes + keywords[3] + numberEnding(minutes);
+    }
+    var seconds = temp % 60;
+    if (seconds) {
+        str+= seconds + keywords[4] + numberEnding(seconds);
+    }
+   return str
+}      
