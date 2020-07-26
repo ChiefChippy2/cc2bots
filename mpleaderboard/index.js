@@ -97,7 +97,7 @@ trs[i].remove()
 }}
 cc.innerHTML+=dd
  /*Only preserve the table*/
-   console.log(document.qs(".leaderboardTable").outerHTML)
+   
    lead.innerHTML=document.qs(".leaderboardTable").outerHTML
    /*Adapt time leaderboards so it doesn't just show the seconds*/
    if(type.includes("time")) Array.from(lead.querySelectorAll("tr")).forEach(a=>{
@@ -115,7 +115,7 @@ cc.innerHTML+=dd
     function numberEnding (number) {
         return (number > 1&&!short) ? 's' : '';
     }
-   var keywords=short?[" year"," day"," hour"," minute", " second"]:[" y"," d"," h"," m"," s"]
+   var keywords=short?[" year"," day"," hour"," minute", " second"]:[" y"," d"," h"," m"," s"];
 var str=""
     var temp = a;
     var years = Math.floor(temp / 31536000);
