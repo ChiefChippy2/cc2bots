@@ -80,7 +80,7 @@ function validEntry(){
   /*Also Check... you never know*/
   if(!window.lbs[game][type]) return document.qs(".errorInput").innerHTML="&times; Invalid Game Type. Weird.";
  const boardT=document.qs("#time").options[sel.selectedIndex].value;
- if(!["","daily","weekly","menthly","yearly"].includes(boardT) return document.qs(".errorInput").innerHTML="&times; Invalid Board Type. Ugh.";
+ if(!["","daily","weekly","menthly","yearly"].includes(boardT)) return document.qs(".errorInput").innerHTML="&times; Invalid Board Type. Ugh.";
   fetch("https://cors-anywhere.herokuapp.com/"+window.lbs[game][type]+"&boardType="+boardT)
   .then(r=>r.text())
   .then(re=>{
