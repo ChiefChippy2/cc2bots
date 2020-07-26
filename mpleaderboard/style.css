@@ -1,5 +1,6 @@
 .bod{
-
+font-size:25px;
+color:#fefefe;
 
 
 
@@ -43,4 +44,9 @@ background-color:#7bd468
   font-size:9px;
   color:light-gray;
   font-style:italic;
+}
+.leaderboards{
+max-height:500px;
+overflow-y:scroll;
+
 }
