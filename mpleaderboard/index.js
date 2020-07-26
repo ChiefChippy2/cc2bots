@@ -84,6 +84,7 @@ function validEntry(){
   .then(re=>{
    /*NoScript*/
    const lead=document.qs(".leaderboards")
+   lead.style.display="none";
    lead.innerHTML=re.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,"")
             /*Make the table look better*/
             let trs= lead.querySelectorAll("tr")
@@ -95,9 +96,10 @@ dd+=trs[i].outerHTML
 trs[i].remove()
 }}
 cc.innerHTML+=dd
- for(let i =1;i<=10;i++) document.qs("#"+i).remove();
-   for(let i =2;i<=10;i++) document.qs(".LeaderPage"+i).remove();
-            
+ /*Only preserve the table*/
+   lead.innerHTML=document.qs(".LeaderboardsHead").outerHTML
+    /*Show result*/
+   lead.style.display="block";
             })
   
 }
