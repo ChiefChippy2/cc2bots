@@ -81,6 +81,20 @@ function validEntry(){
   if(!window.lbs[game][type]) return document.qs(".errorInput").innerHTML="&times; Invalid Game Type. Weird.";
   fetch("https://cors-anywhere.herokuapp.com/"+window.lbs[game][type])
   .then(r=>r.text())
-  .then(re=>document.qs(".leaderboards").innerHTML=re)
+  .then(re=>{
+   /*NoScript*/
+   document.qs(".leaderboards").innerHTML=re.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,"")
+            /*Make the table look better*/
+            let trs= document.qs(".leaderboards").querySelectorAll("tr")
+let cc=document.querySelector("tbody")
+var dd=""
+for(let i=101;i<trs.length;i++){
+if(trs[i].className!="LeaderboardsHead"){
+dd+=trs[i].outerHTML
+trs[i].remove()
+}
+ for(let i =1;i<=10;i++) document.qs("#"+i).remove()
+            
+            })
   
 }
