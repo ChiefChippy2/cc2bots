@@ -87,7 +87,7 @@ function validEntry(){
    lead.innerHTML=re.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,"")
             /*Make the table look better*/
             let trs= lead.querySelectorAll("tr")
-let cc=lead.qs("tbody")
+let cc=lead.querySelector("tbody")
 var dd=""
 for(let i=101;i<trs.length;i++){
 if(trs[i].className!="LeaderboardsHead"){
