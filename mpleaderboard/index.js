@@ -102,9 +102,9 @@ cc.innerHTML+=dd
    /*Adapt time leaderboards so it doesn't just show the seconds*/
    if(type.includes("time")) Array.from(lead.querySelectorAll("tr")).forEach(a=>{
     let el=Array.from(a.querySelectorAll("td")).reverse()[0]
-    if(!el) continue;
+    if(el){
     el.innerHTML=secStr(parseInt(el.innerText.replace(/[^0-9]+/g,"")));
-   });
+    }   });
     /*Show result*/
    lead.style.display="block";
             })
