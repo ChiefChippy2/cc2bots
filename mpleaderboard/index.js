@@ -114,9 +114,9 @@ cc.innerHTML+=dd
     // adapted from SO 
 
     function numberEnding (number) {
-        return (number > 1&&!short) ? 's' : '';
+        return (number > 1&&!short) ? 's ' : ' ';
     }
-   var keywords=short?[" year"," day"," hour"," minute", " second"]:[" y"," d"," h"," m"," s"];
+   var keywords=short?[" y"," d"," h"," m"," s"]:[" year"," day"," hour"," minute", " second"];
 var str=""
     var temp = a;
     var years = Math.floor(temp / 31536000);
