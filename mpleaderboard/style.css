@@ -26,6 +26,7 @@ color:#ff0000;
 .suggestitem{
   border-bottom: 1px solid rgba(254,254,254,0.5);
   margin:4px;
+  font-size:15px;
   
 }
 .type{
