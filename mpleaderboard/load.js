@@ -1,9 +1,9 @@
-const needed=["alias.json","lbs.json"]
+const needed=["alias.json","lbs.json","options.html"]
 /* Load everything and warn user */
 Promise.all(
 needed
 .map(x=>fetch(x)
-.then(r=>r.json())
+.then(r=>x.endsWith("json")?r.json():r.text())
 .then(re=>[x.split(".")[0],re])
 .catch(e=>{if(confirm("Uh oh, something went wrong whilst trying to load one of all of the resources. Retry now?")) location.reload()
           })))
@@ -26,6 +26,13 @@ window.addEventListener("AllLoaded",()=>{
 }
 
 window.lbsearch = new Fuse(Object.keys(window.lbs), options)
+/*Now, addition : Show the options thingy. Depends in screen width/ehgith.*/
+window.cW=document.body.clientWidth
+window.cH=document.body.clientHeight
+          if(cW<520||cW<cH) document.querySelector("#beneath").innerHTML=(window.options);
+          else document.querySelector("#right").innerHTML=(window.options);
+         /*If client has a limited width, we should use short Names*/
+         if(cW<400) window.shortDate=true;
 //Now show the body div
 document.querySelector(".bod").style.display="yes";
 document.querySelector(".loading").style.display="none";
