@@ -4,12 +4,24 @@
 </script>
 We are still working on the options. They might have unexpected issues.
 <div class="options">
-<span id="lessData" is="off">OFF</span> <button class="switch on">Turn On Save Data Mode ( Doesn't load images )</button>§<br>
-<span id="noLink" is="off">OFF</span> <button class="switch on">Turn On No Link ( Removes Links )</button>§<br>
+<span id="lessData" is="off">SaveData</span>
+  <label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>§<br>
+<span id="noLink" is="off">NoLink</span> <label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+  §<br>
+<span id="shortDate" is="off">Shorter Dates</span> <label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+  §<br>
 <span id="goTo" is="1">1</span> <input type="number" min="1" max="1000" placeholder="Go to Nth place"/><br>
 <span id="highlight" is=""></span> <input type="text" placeholder="Find & Highlight This Player"/>*<br>
-<span id="shortDate" is="off">OFF</span> <button class="switch on">Turn On Shorter Dates</button>§<br>
-<span id="autoScroll" is="0">0x Speed ( Manual )</span> <button class="switch on">Start Auto Scrolling</button><br>
+<span id="autoScroll" is="0">0x Speed ( Manual )</span> <input placeholder="No Auto Scrolling" type="number"/><br>
 
 
 <span class="smal">§ - Effective Upon next leaderboard fetch<br>
