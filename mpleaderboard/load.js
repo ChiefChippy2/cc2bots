@@ -18,6 +18,7 @@ window.tmw=window.setTimeout(
 
 window.addEventListener("AllLoaded",()=>{
           clearTimeout(tmw)
+          window.lb=0
  //We know all stuff has been loaded, now setup fuse
   const options = {
   includeScore: true,
