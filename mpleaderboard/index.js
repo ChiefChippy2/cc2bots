@@ -81,7 +81,8 @@ function validEntry(){
   if(!window.lbs[game][type]) return document.qs(".errorInput").innerHTML="&times; Invalid Game Type. Weird.";
  const boardT=document.qs("#time").options[document.qs("#time").selectedIndex].value;
  if(!["","daily","weekly","menthly","yearly"].includes(boardT)) return document.qs(".errorInput").innerHTML="&times; Invalid Board Type. Ugh.";
-  fetch("https://cors-anywhere.herokuapp.com/"+window.lbs[game][type]+"&boardType="+boardT)
+
+fetch("https://thingproxy.freeboard.io/fetch/"+window.lbs[game][type]+"&boardType="+boardT)
   .then(r=>r.text())
   .then(re=>{
    /*NoScript*/
@@ -109,7 +110,13 @@ cc.innerHTML+=dd
     }   });
     /*Show result*/
    lead.style.display="block";
+ window.lb=1
             })
+ .catch(error=>{document.qs(".errorInput").innerHTML="&times; Failed to fetch. Maybe bad internet connection / proxy down?"
+        //Also give the raw url
+          document.qs(".leaderboards").innerHTML=("Failed to fetch. Check the unformatted raw leaderboard <a href='"+window.lbs[game][type]+"&boardType="+boardT+"'>here</a>.")    
+            window.lb=0   
+               })
   
 }
   function secStr (a,short) {
