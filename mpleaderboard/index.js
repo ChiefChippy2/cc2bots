@@ -110,7 +110,7 @@ cc.innerHTML+=dd
     }   });
     /*Show result, scroll to*/
    lead.style.display="block";
-lead.scrollIntoView(true)
+lead.scrollIntoView()
  window.lb=1
             })
  .catch(error=>{document.qs(".errorInput").innerHTML="&times; Failed to fetch. Maybe bad internet connection / proxy down?"
