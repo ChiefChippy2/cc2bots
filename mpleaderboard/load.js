@@ -28,7 +28,7 @@ window.addEventListener("AllLoaded",()=>{
 window.lbsearch = new Fuse(Object.keys(window.lbs), options)
 /*Now, addition : Show the options thingy. Depends in screen width/ehgith.*/
 window.cW=document.body.clientWidth
-window.cH=document.body.clientHeight
+window.cH=document.body.windowHeight
           if(cW<520||cW<cH) document.querySelector("#beneath").innerHTML=(window.options);
           else document.querySelector("#right").innerHTML=(window.options);
          /*If client has a limited width, we should use short Names*/
