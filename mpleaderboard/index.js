@@ -32,7 +32,7 @@ function entrySuggest(ev){
   /* finally, check if suggestions is empty*/
   if(suggestions.length===0) suggestions.push({type:"Warning",value:"No matches"})
   /*and add to the html.. oops forgot :p*/
-  su.innerHTML="";
+  su.innerHTML="<br>";
   for(let ele of suggestions){
    let a = document.createElement("div");
    a.className="suggestitem";
