@@ -108,8 +108,9 @@ cc.innerHTML+=dd
     if(el){
     el.innerHTML=secStr(parseInt(el.innerText.replace(/[^0-9]+/g,"")));
     }   });
-    /*Show result*/
+    /*Show result, scroll to*/
    lead.style.display="block";
+lead.scrollIntoView(true)
  window.lb=1
             })
  .catch(error=>{document.qs(".errorInput").innerHTML="&times; Failed to fetch. Maybe bad internet connection / proxy down?"
