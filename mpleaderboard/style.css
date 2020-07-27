@@ -116,3 +116,12 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+.options{
+  font-size:30px;
+  color:#eeebf0;
+  padding:10px;
+  
+}
+#entry{
+  width:100px
+}
