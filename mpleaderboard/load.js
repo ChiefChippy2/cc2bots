@@ -1,6 +1,8 @@
-const needed=["alias.json","lbs.json","options.html"]
+
 /* Load everything and warn user */
-window.addEventListener("DOMContentLoaded",function(){Promise.all(
+window.addEventListener("DOMContentLoaded",function(){
+       const needed=["alias.json","lbs.json","options.html"]   
+          Promise.all(
 needed
 .map(x=>fetch(x)
 .then(r=>x.endsWith("json")?r.json():r.text())
