@@ -56,6 +56,11 @@ br {
             content: ""; 
             margin-top: 10px; 
 }
+.s{
+display: block; 
+            content: ""; 
+            margin-top: 4px; 
+}
 .switch {
   position: relative;
   display: inline-block;
