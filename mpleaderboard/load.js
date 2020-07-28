@@ -1,6 +1,6 @@
 const needed=["alias.json","lbs.json","options.html"]
 /* Load everything and warn user */
-Promise.all(
+window.addEventListener("DOMContentLoaded",function(){Promise.all(
 needed
 .map(x=>fetch(x)
 .then(r=>x.endsWith("json")?r.json():r.text())
@@ -15,7 +15,7 @@ needed
 window.tmw=window.setTimeout(
 ()=>{if(confirm("Uh oh, something went wrong whilst trying to load one of all of the resources. Retry now?")) location.reload()
     },10*1000)
-
+                                                     })
 window.addEventListener("AllLoaded",()=>{
           clearTimeout(tmw)
           window.lb=0
