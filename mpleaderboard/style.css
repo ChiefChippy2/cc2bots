@@ -51,9 +51,10 @@ max-height:500px;
 overflow-y:scroll;
 width:520px;
 }
-br{
-  font-size:12px;
-  
+br {
+            display: block; 
+            content: ""; 
+            margin-top: 10px; 
 }
 .switch {
   position: relative;
