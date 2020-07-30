@@ -6,7 +6,7 @@ const fL={
  "noLink":(x)=>this.postProc(x),
 "shortDate":(x)=>this.postProc(x),
 "goTo":(x)=>{if(parseInt(x.innerText)!=x.innerText) return x.style.color="red";
-             else x.style.color:black;
+             else x.style.color="black";
              x.setAttribute("is",x.innerText);
              SIV(parseInt(x.innerText))
             
@@ -26,9 +26,9 @@ function loadOptions(){
 let inps=document.qs(".options").querySelectorAll("span")
 Array.from(inps).forEach((a)=>{
   if(a.getAttribute("is")){
-a.querySelector("input").addEventListener("input",fL[a.id].bind(a))
-a.addEventListener("input",fL[a.id])
-if(a.querySelector("input").type==="button") a.querySelector("input").addEventListener("click",fL[a.id].bind(a))
+const child=a.querySelector("input")
+if(child) child.addEventListener("input",fL[a.id].bind(a));else a.addEventListener("input",fL[a.id]);
+if(child&&child.type==="button") a.querySelector("input").addEventListener("click",fL[a.id].bind(a))
 
   }
 
