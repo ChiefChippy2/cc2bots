@@ -49,7 +49,7 @@ function SIV(n){
 }
 function SIVP(player){
  player=player.toLowerCase();
-let ar=Array.from(document.qs(".leaderboards").querySelectorAll("tr")).forEach(a=>{
+let ar=Array.from(document.qs(".leaderboards").querySelectorAll("tr")).slice(1).forEach(a=>{
 const c= a.querySelectorAll("td")[2].innerText.toLowerCase()
  /*
  0 is placement
