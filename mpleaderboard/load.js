@@ -28,7 +28,10 @@ window.addEventListener("AllLoaded",()=>{
   includeScore: true,
     ignoreLocation:true
 }
-
+/*init settings*/
+  window.lessData=(navigator.connection.saveData||["2g","3g","4g"].includes(navigator.connection.type))
+ window.noLink=false;
+       window.shortDate=false;
 window.lbsearch = new Fuse(Object.keys(window.lbs), options)
 /*Now, addition : Show the options thingy. Depends in screen width/ehgith.*/
 window.cW=document.body.clientWidth
