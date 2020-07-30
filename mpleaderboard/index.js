@@ -88,6 +88,10 @@ fetch("https://cors-anywhere.herokuapp.com/"+window.lbs[game][type]+"&boardType=
    /*NoScript*/
    const lead=document.qs(".leaderboards")
    lead.style.display="none";
+ /*options*/
+ if(window.lessData) re=re.replace(/<\/?img[^>]+>/g,""); //replaces all img urls with nuffin
+ if(window.noLink) re=re.replace(/<a[^>]+>([^<]+)<\/a>/g,(_,y)=>y); //replaces all a tag with ....well look for yourself smartyhead
+  /*end of options*/
    lead.innerHTML=re.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,"")
             /*Make the table look better*/
             let trs= lead.querySelectorAll("tr")
@@ -106,7 +110,7 @@ cc.innerHTML+=dd
    if(type.includes("time")) Array.from(lead.querySelectorAll("tr")).forEach(a=>{
     let el=Array.from(a.querySelectorAll("td")).reverse()[0]
     if(el){
-    el.innerHTML=secStr(parseInt(el.innerText.replace(/[^0-9]+/g,"")));
+    el.innerHTML=secStr(parseInt(el.innerText.replace(/[^0-9]+/g,"")),window.shortDate);
     }   });
     /*Show result, scroll to*/
    lead.style.display="block";
