@@ -38,7 +38,7 @@ window.cH=window.innerHeight
          /*If client has a limited width, we should use short Names*/
          if(cW<400) window.shortDate=true;
 //Now show the body div
-document.querySelector(".bod").style.display="yes";
+document.querySelector(".bod").style="display:yes";
 document.querySelector(".loading").style.display="none";
 //Emit ready
 window.dispatchEvent(new Event("ready"))
