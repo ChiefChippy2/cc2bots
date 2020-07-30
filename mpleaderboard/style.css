@@ -2,7 +2,8 @@
 font-size:25px;
 color:#fefefe;
 
-
+/*initially hide*/
+display:none;
 
 }
 .loading{
