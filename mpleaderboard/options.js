@@ -40,3 +40,23 @@ if(child&&child.type==="button") a.querySelector("input").addEventListener("clic
 
 
 }
+function SIV(n){
+ //Scroll into view
+ document.qs(".leaderboards").querySelectorAll("tr")[n].scrollIntoView();
+ //maybe a highlight class...hm
+ 
+}
+function SIVP(player){
+ player=player.toLowerCase();
+let ar=Array.from(document.qs(".leaderboards").querySelectorAll("tr")).forEach(a=>{
+const c= a.querySelectorAll("td")[2].innerText.toLowerCase()
+ /*
+ 0 is placement
+ 1 is head
+ 2 is ign which we need
+ 3 is score ( wins )*/
+if(c.starsWith(player)||c.endsWith(player)||c.includes(player)) a.scrollIntoView({"behavior":"smooth"});
+ })
+ 
+ 
+}
