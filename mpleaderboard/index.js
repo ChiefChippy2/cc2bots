@@ -90,7 +90,7 @@ fetch("https://cors-anywhere.herokuapp.com/"+window.lbs[game][type]+"&boardType=
    lead.style.display="none";
  /*options*/
  if(window.lessData) re=re.replace(/<\/?img[^>]+>/g,""); //replaces all img urls with nuffin
- if(window.noLink) re=re.replace(/<a[^>]+>([^<]+)<\/a>/g,(_,y)=>y); //replaces all a tag with ....well look for yourself smartyhead
+ //replaces all a tag with ....well look for yourself smartyhead
   /*end of options*/
    lead.innerHTML=re.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,"")
             /*Make the table look better*/
@@ -106,6 +106,7 @@ cc.innerHTML+=dd
  /*Only preserve the table*/
    
    lead.innerHTML=document.qs(".leaderboardTable").outerHTML
+ /*noLink*/ if(window.noLink) Array.from(lead.querySelectorAll("a")).forEach(b=>b.outerHTML=b.innerText);
    /*Adapt time leaderboards so it doesn't just show the seconds*/
    if(type.includes("time")) Array.from(lead.querySelectorAll("tr")).forEach(a=>{
     let el=Array.from(a.querySelectorAll("td")).reverse()[0]
