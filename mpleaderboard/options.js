@@ -2,9 +2,9 @@ document.qs=(x)=>document.querySelector(x)
 window.addEventListener("ready",loadOptions)
 const fL={
  "postProc":(x)=>{/*testing*/console.log(x);x.setAttribute("is",x.querySelector("input").checked?"on":"off");window[x.id]=x.querySelector("input").checked},
-"lessData":(x)=>this.postProc(x),
- "noLink":(x)=>this.postProc(x),
-"shortDate":(x)=>this.postProc(x),
+"lessData":(x)=>fL.postProc(x),
+ "noLink":(x)=>fL.postProc(x),
+"shortDate":(x)=>fL.postProc(x),
 "goTo":(x)=>{if(parseInt(x.innerText)!=x.innerText) return x.style.color="red";
              else x.style.color="black";
              x.setAttribute("is",x.innerText);
