@@ -26,7 +26,11 @@ function loadOptions(){
 let inps=document.qs(".options").querySelectorAll("span")
 Array.from(inps).forEach((a)=>{
   if(a.getAttribute("is")){
-const child=a.querySelector("input")
+let child=a.nextSibling;
+while(child && child.nodeType != 1) {
+    child = child.nextSibling
+}
+   child=child.querySelector("input")
 if(child) child.addEventListener("input",fL[a.id].bind(a));else a.addEventListener("input",fL[a.id]);
 if(child&&child.type==="button") a.querySelector("input").addEventListener("click",fL[a.id].bind(a))
 
