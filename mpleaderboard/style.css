@@ -84,8 +84,8 @@ display: block;
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: 5s;
-  transition: 5s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .slider:before {
@@ -96,8 +96,8 @@ display: block;
   left: 2px;
   bottom: 2px;
   background-color: white;
-  -webkit-transition: 7s;
-  transition: 7s;
+  -webkit-transition: .7s;
+  transition: .7s;
 }
 
 input:checked + .slider {
