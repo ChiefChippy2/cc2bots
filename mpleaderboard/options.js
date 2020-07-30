@@ -33,7 +33,7 @@ while(child && child.nodeType != 1) {
 }
    child=child.querySelector("input")
 if(child) child.addEventListener("input",fL[a.id].bind(a,a,child));else a.addEventListener("input",fL[a.id].bind(a,a));
-if(child&&child.type==="button") a.querySelector("input").addEventListener("click",fL[a.id].bind(a,a,child))
+if(child&&child.type==="button") child.addEventListener("click",fL[a.id].bind(a,a,child))
 
   }
 
