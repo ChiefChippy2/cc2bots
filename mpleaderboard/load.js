@@ -1,7 +1,7 @@
 
 /* Load everything and warn user */
 //Appearently weird stuff can happen, so had to add that
-if(document.readyState!=="loading") window.dispatchEvent(new Event("DOMContentLoaded"));
+
 window.addEventListener("DOMContentLoaded",function(){
        const needed=["alias.json","lbs.json","options.html"]   
           Promise.all(
@@ -43,4 +43,4 @@ document.querySelector(".loading").style.display="none";
 //Emit ready
 window.dispatchEvent(new Event("ready"))
 })
-  
+ if(document.readyState!=="loading") window.dispatchEvent(new Event("DOMContentLoaded")); 
