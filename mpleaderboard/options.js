@@ -11,13 +11,14 @@ const fL={
              SIV(parseInt(x.innerText))
             
             },
-"highlight":(x,y)=>{x.setAttribute("is",y.value);SIVP(y.value)},
+"highlight":(x,y)=>{/*oi u dere?*/ console.log(x);x.setAttribute("is",y.value);SIVP(y.value)},
 "autoScroll":(x,y)=>{
+ console.log(x);
   const is=x.getAttribute("is")
   const speeds=["0x Speed ( Manual )","1x Speed","2x Speed","4x Speed","8x Speed","16x Speed"];
   const ind=speeds.map(x=>x.match(/[0-9]+/g)[0]).indexOf(is)+1;
   y.value=speeds[ind]||speeds[0];
-  x.setAttribute("is",ind<speeds.length?speeds[ind].match(/[0-9]+/g)[0]:0)
+  x.setAttribute("is",ind<speeds.length?speeds[ind].match(/[0-9]+/g)[0]:"0")
   window.scroll=x.getAttribute("is")}
 
 
