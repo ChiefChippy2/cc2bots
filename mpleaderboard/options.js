@@ -43,7 +43,11 @@ if(child&&child.type==="button") child.addEventListener("click",fL[a.id].bind(a,
 }
 function SIV(n){
  //Scroll into view
- document.qs(".leaderboards").querySelectorAll("tr")[n].scrollIntoView();
+ document.qs(".leaderboards").querySelectorAll("tr")[n].scrollIntoView({
+            behavior: 'auto',
+            block: 'center',
+            inline: 'center'
+        });
  //maybe a highlight class...hm
  
 }
@@ -56,7 +60,11 @@ const c= a.querySelectorAll("td")[2].innerText.toLowerCase()
  1 is head
  2 is ign which we need
  3 is score ( wins )*/
-if(c.starsWith(player)||c.endsWith(player)||c.includes(player)) a.scrollIntoView({"behavior":"smooth"});
+if(c.starsWith(player)||c.endsWith(player)||c.includes(player)) a.scrollIntoView({
+            behavior: 'auto',
+            block: 'center',
+            inline: 'center'
+        });
  })
  
  
