@@ -60,7 +60,7 @@ const c= a.querySelectorAll("td")[2].innerText.toLowerCase()
  1 is head
  2 is ign which we need
  3 is score ( wins )*/
-if(c.starsWith(player)||c.endsWith(player)||c.includes(player)) a.scrollIntoView({
+if(c.startsWith(player)||c.endsWith(player)||c.includes(player)) a.scrollIntoView({
             behavior: 'auto',
             block: 'center',
             inline: 'center'
