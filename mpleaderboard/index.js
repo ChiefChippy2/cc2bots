@@ -6,7 +6,7 @@ window.addEventListener("ready",()=>{
   entry.addEventListener("unfocus",checkValid)
  const sub= document.qs(".sub")
   sub.addEventListener("click",validEntry)
-
+setInterval(autoScro,16) //16 so 60 fps
 })
 
 /*Suggest alias/game names when user is typing*/
@@ -156,4 +156,13 @@ var str=""
         str+= seconds + keywords[4] + numberEnding(seconds);
     }
    return str
-}      
+}     
+let gS=0;
+function autoScro(){
+if(window.scroll>0&&window.lb===1){
+document.qs(".leaderboards").scrollTo(0,gS)
+gS+=window.scroll
+}
+ if(window.scroll===0) gS=window.scrollY
+
+}
