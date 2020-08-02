@@ -11,14 +11,13 @@ const fL={
              SIV(parseInt(x.innerText))
             
             },
-"highlight":(x,y)=>{/*oi u dere?*/ console.log(x);x.setAttribute("is",y.value);SIVP(y.value)},
+"highlight":(x,y)=>{x.setAttribute("is",y.value);SIVP(y.value)},
 "autoScroll":(x,y)=>{
- console.log(x);
-  const is=x.getAttribute("is")
+  const is=this==="stop"?x.getAttribute("is"):"16"
   const speeds=["0x Speed ( Manual )","1x Speed","2x Speed","4x Speed","8x Speed","16x Speed"];
-  const ind=speeds.map(x=>x.match(/[0-9]+/g)[0]).indexOf(is)+1;
-  y.value=speeds[ind]||speeds[0];
-  x.setAttribute("is",ind<speeds.length?speeds[ind].match(/[0-9]+/g)[0]:"0")
+  const ind=speeds.map(x=>x.match(/[0-9]+/g)[0]).indexOf(is)+(this==="rc"?-1:1);
+  y.value=ind<0?speeds[5]:(speeds[ind]||speeds[0]);
+  x.setAttribute("is",ind<0?"16":(ind<speeds.length?speeds[ind].match(/[0-9]+/g)[0]:"0"))
   window.scroll=x.getAttribute("is")}
 
 
@@ -33,7 +32,14 @@ while(child && child.nodeType != 1) {
 }
    child=child.querySelector("input")
 if(child) child.addEventListener("input",fL[a.id].bind(a,a,child));else a.addEventListener("input",fL[a.id].bind(a,a));
-if(child&&child.type==="button") child.addEventListener("click",fL[a.id].bind(a,a,child))
+if(child&&child.type==="button"){child.addEventListener("click",fL[a.id].bind("click",a,child))
+                                child.addEventListener("dblclick",fL[a.id].bind("stop",a,child))
+                                child.addEventListener('contextmenu', function(ev) {
+    ev.preventDefault();
+    fL[a.id].bind("rc",a,child)
+    return false;
+}, false);
+                                }
 
   }
 
@@ -42,7 +48,8 @@ if(child&&child.type==="button") child.addEventListener("click",fL[a.id].bind(a,
 
 }
 function SIV(n){
- //Scroll into view
+ //Scroll into view, first stop auto scroll
+ stopAutoScroll()
  document.qs(".leaderboards").querySelectorAll("tr")[n].scrollIntoView({
             behavior: 'auto',
             block: 'center',
@@ -60,12 +67,18 @@ const c= a.querySelectorAll("td")[2].innerText.toLowerCase()
  1 is head
  2 is ign which we need
  3 is score ( wins )*/
-if(c.startsWith(player)||c.endsWith(player)||c.includes(player)) a.scrollIntoView({
+if(c.startsWith(player)||c.endsWith(player)||c.includes(player)){
+ stopAutoScroll()
+ a.scrollIntoView({
             behavior: 'auto',
             block: 'center',
             inline: 'center'
         });
- })
- 
+                                                                 
+                                                                }
+})
+}
+function stopAutoScroll(){
+ document.qs(".options").querySelector('input[type="button"]').dispatchEvent(new Event("dblclick"))
  
 }
