@@ -161,7 +161,8 @@ let gS=0;
 function autoScro(){
  gS=document.qs(".leaderboards").scrollTop
 if(window.scroll>0&&window.lb===1){
+ gS=parseInt(gS)+parseInt(window.scroll)
 document.qs(".leaderboards").scrollTo(0,gS)
-gS=parseInt(gS)+parseInt(window.scroll)
+
 }
 }
