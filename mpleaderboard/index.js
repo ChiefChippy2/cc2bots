@@ -163,6 +163,6 @@ if(window.scroll>0&&window.lb===1){
 document.qs(".leaderboards").scrollTo(0,gS)
 gS=parseInt(gS)+parseInt(window.scroll)
 }
- if(window.scroll===0) gS=document.qs(".leaderboards").scrollY
+ if(window.scroll===0) gS=document.qs(".leaderboards").scrollTop
 
 }
