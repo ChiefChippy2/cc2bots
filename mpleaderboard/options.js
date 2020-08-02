@@ -13,7 +13,7 @@ const fL={
             },
 "highlight":(x,y)=>{x.setAttribute("is",y.value);SIVP(y.value)},
 "autoScroll":(x,y)=>{
-  const is=this==="stop"?x.getAttribute("is"):"16"
+  const is=this==="stop"?"16":x.getAttribute("is")
   const speeds=["0x Speed ( Manual )","1x Speed","2x Speed","4x Speed","8x Speed","16x Speed"];
   const ind=speeds.map(x=>x.match(/[0-9]+/g)[0]).indexOf(is)+(this==="rc"?-1:1);
   y.value=ind<0?speeds[5]:(speeds[ind]||speeds[0]);
