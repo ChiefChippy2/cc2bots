@@ -13,12 +13,25 @@ const fL={
             },
 "highlight":(x,y)=>{x.setAttribute("is",y.value);SIVP(y.value)},
 "autoScroll":(x,y)=>{
-  const is=this==="stop"?"16":x.getAttribute("is")
+ console.log(this)
+  const is=x.getAttribute("is")
   const speeds=["0x Speed ( Manual )","1x Speed","2x Speed","4x Speed","8x Speed","16x Speed"];
   const ind=speeds.map(x=>x.match(/[0-9]+/g)[0]).indexOf(is)+(this==="rc"?-1:1);
   y.value=ind<0?speeds[5]:(speeds[ind]||speeds[0]);
   x.setAttribute("is",ind<0?"16":(ind<speeds.length?speeds[ind].match(/[0-9]+/g)[0]:"0"))
-  window.scroll=x.getAttribute("is")}
+  window.scroll=x.getAttribute("is")},
+ "stopAutoScroll":(x,y){
+ if(y.getAttribute("is")==="0)){
+ y.setAttribute("is","1");
+ window.scroll=0;
+ y.innerHTML="▶"
+}else{
+y.setAttribute("is","0");
+ window.scroll=parseInt(document.qs("#autoScroll").getAttribute("is"));
+ y.innerHTML="⏸"
+
+}
+}
 
 
 }
@@ -33,7 +46,7 @@ while(child && child.nodeType != 1) {
    child=child.querySelector("input")
 if(child) child.addEventListener("input",fL[a.id].bind(a,a,child));else a.addEventListener("input",fL[a.id].bind(a,a));
 if(child&&child.type==="button"){child.addEventListener("click",fL[a.id].bind("click",a,child))
-                                child.addEventListener("dblclick",fL[a.id].bind("stop",a,child))
+                                document.qs("#sao").addEventListener("click",fl[a.id].bind("click",a,child))
                                 child.addEventListener('contextmenu', function(ev) {
     ev.preventDefault();
     fL[a.id].bind("rc",a,child)
@@ -49,7 +62,7 @@ if(child&&child.type==="button"){child.addEventListener("click",fL[a.id].bind("c
 }
 function SIV(n){
  //Scroll into view, first stop auto scroll
- stopAutoScroll()
+ sao()
  document.qs(".leaderboards").querySelectorAll("tr")[n].scrollIntoView({
             behavior: 'auto',
             block: 'center',
@@ -68,7 +81,7 @@ const c= a.querySelectorAll("td")[2].innerText.toLowerCase()
  2 is ign which we need
  3 is score ( wins )*/
 if(c.startsWith(player)||c.endsWith(player)||c.includes(player)){
- stopAutoScroll()
+ sao()
  a.scrollIntoView({
             behavior: 'auto',
             block: 'center',
@@ -78,7 +91,7 @@ if(c.startsWith(player)||c.endsWith(player)||c.includes(player)){
                                                                 }
 })
 }
-function stopAutoScroll(){
- document.qs(".options").querySelector('input[type="button"]').dispatchEvent(new Event("dblclick"))
  
+function sao(){
+ document.qs("#sao").dispatchEvent(new Event("click"))
 }
