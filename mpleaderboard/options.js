@@ -20,7 +20,7 @@ const fL={
   y.value=ind<0?speeds[5]:(speeds[ind]||speeds[0]);
   x.setAttribute("is",ind<0?"16":(ind<speeds.length?speeds[ind].match(/[0-9]+/g)[0]:"0"))
   window.scroll=x.getAttribute("is")},
- "stopAutoScroll":(x,y){
+ "stopAutoScroll":(x,y)=>{
  if(y.getAttribute("is")==="0"){
  y.setAttribute("is","1");
  window.scroll=0;
