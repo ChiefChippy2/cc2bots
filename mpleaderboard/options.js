@@ -21,7 +21,7 @@ const fL={
   x.setAttribute("is",ind<0?"16":(ind<speeds.length?speeds[ind].match(/[0-9]+/g)[0]:"0"))
   window.scroll=x.getAttribute("is")},
  "stopAutoScroll":(x,y)=>{
- if(y.getAttribute("is")==="0"){
+ if(y.getAttribute("is")!=="1"){
  y.setAttribute("is","1");
  window.scroll=0;
  y.value="▶"
@@ -46,7 +46,7 @@ while(child && child.nodeType != 1) {
    child=child.querySelector("input")
 if(child) child.addEventListener("input",fL[a.id].bind(a,a,child));else a.addEventListener("input",fL[a.id].bind(a,a));
 if(child&&child.type==="button"){child.addEventListener("click",fL[a.id].bind("click",a,child))
-                                document.qs("#sao").addEventListener("click",fl.stopAutoScroll.bind("click",a,child))
+                                document.qs("#sao").addEventListener("click",fl.stopAutoScroll.bind("click",a,document.qs("#sao")))
                                 child.addEventListener('contextmenu', function(ev) {
     ev.preventDefault();
     fL[a.id].bind("rc",a,child)
