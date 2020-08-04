@@ -19,15 +19,17 @@ const fL={
   const ind=speeds.map(x=>x.match(/[0-9]+/g)[0]).indexOf(is)+(this==="rc"?-1:1);
   y.value=ind<0?speeds[5]:(speeds[ind]||speeds[0]);
   x.setAttribute("is",ind<0?"16":(ind<speeds.length?speeds[ind].match(/[0-9]+/g)[0]:"0"))
-  window.scroll=x.getAttribute("is")},
+  if(window.pS!==1){window.scroll=x.getAttribute("is")}},
  "stopAutoScroll":(x,y)=>{
  if(y.getAttribute("is")!=="1"){
  y.setAttribute("is","1");
  window.scroll=0;
+  window.pS=1
  y.value="▶"
 }else{
 y.setAttribute("is","0");
  window.scroll=parseInt(document.qs("#autoScroll").getAttribute("is"));
+ window.pS=0
  y.value="⏸"
 
 }
