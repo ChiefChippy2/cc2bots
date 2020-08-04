@@ -46,7 +46,7 @@ while(child && child.nodeType != 1) {
    child=child.querySelector("input")
 if(child) child.addEventListener("input",fL[a.id].bind(a,a,child));else a.addEventListener("input",fL[a.id].bind(a,a));
 if(child&&child.type==="button"){child.addEventListener("click",fL[a.id].bind("click",a,child))
-                                document.qs("#sao").addEventListener("click",fl.stopAutoScroll.bind("click",a,document.qs("#sao")))
+                                document.qs("#sao").addEventListener("click",fL.stopAutoScroll.bind("click",a,document.qs("#sao")))
                                 child.addEventListener('contextmenu', function(ev) {
     ev.preventDefault();
     fL[a.id].bind("rc",a,child)
