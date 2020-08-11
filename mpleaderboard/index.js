@@ -48,6 +48,7 @@ function entrySuggest(ev){
 function handleSuggest(){
   document.qs("#entry").value=this.querySelector(".valu").innerText;
   document.qs(".suggest").style.display="none";
+ document.qs(".sub").disabled=false;
   checkValid()
 }
 
@@ -119,6 +120,8 @@ lead.scrollIntoView()
  window.lb=1
             })
  .catch(error=>{document.qs(".errorInput").innerHTML="&times; Failed to fetch. Maybe bad internet connection / proxy down?"
+                //Erase msg after 5 secs
+                setTimeout(()=>document.qs(".errorInput").innerHTML="",5000)
         //Also give the raw url
           document.qs(".leaderboards").innerHTML=("Failed to fetch. Check the unformatted raw leaderboard <a href='"+window.lbs[game][type]+"&boardType="+boardT+"'>here</a>.")    
             window.lb=0   
