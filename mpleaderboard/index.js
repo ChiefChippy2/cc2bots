@@ -83,7 +83,7 @@ function validEntry(){
  const boardT=document.qs("#time").options[document.qs("#time").selectedIndex].value;
  if(!["","daily","weekly","menthly","yearly"].includes(boardT)) return document.qs(".errorInput").innerHTML="&times; Invalid Board Type. Ugh.";
 
-fetch("https://script.google.com/macros/s/AKfycbzuUgQfTB6vnbtLc2m-fvd5Wpbo1Z1CvaovzVP9N3rp2np9CEU/exec?f=proxy&url="+window.lbs[game][type]+"&boardType="+boardT)
+fetch("https://script.google.com/macros/s/AKfycbzuUgQfTB6vnbtLc2m-fvd5Wpbo1Z1CvaovzVP9N3rp2np9CEU/exec?f=proxy&url="+btoa(window.lbs[game][type]+"&boardType="+boardT))
   .then(r=>r.text())
   .then(re=>{
    /*NoScript*/
