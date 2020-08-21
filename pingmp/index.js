@@ -22,6 +22,14 @@ displayPing(s,results.reduce((a,c)=>a+=c)/n)
 
 
 })
+}
 
 function displayIP(x){console.log(x)}
 function displayPing(x,y){console.log(x,y)}
+function ping(IP){
+  //ofc their mc servers dont have https servers, thus erroring
+  let a = new Date()
+  return new Promise(r=>{
+  fetch("https://"+IP,{method:"no-cors"}).catch(_=>r(new Date()-a))
+  })
+}
