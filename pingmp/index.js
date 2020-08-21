@@ -5,7 +5,7 @@ let lon=["us","clans"]
 let poa=lon.filter(x=>!excludes.includes(x)).map(y=>fetch("https://dns.google.com/resolve?name="+y+".mineplex.com&type=a"))
 Promise.all(poa).then(ress=>{
 Promise.all(ress.filter(x=>x.ok||x.status===200).map(x=>x.json())).then(allips=>{
-const ip=allips.filter(x=>x.Answer&&x.Answer[0].data).map(x=>x.Answer[0].data).map(x=>x).flat()
+const ip=allips.filter(x=>x.Answer&&x.Answer[0].data).map(x=>x.Answer.map(y=>y.data)).map(x=>x).flat()
 displayIP(ip);
 (async function(){
 for(let s of ip){
