@@ -35,8 +35,8 @@ let htmls=x.map(ip=>`<tr><td>${ip}</td><td>...</td></tr>`)
 }
 
 function displayPing(x,y){
-  document.querySelectorAll("tr")[count].querySelectorAll("td")[1].innerHTML=y;
-count++
+  document.querySelectorAll("tr")[window.count].querySelectorAll("td")[1].innerHTML=y;
+window.count++
 }
 function ping(IP){
   //ofc their mc servers dont have https servers, thus erroring
