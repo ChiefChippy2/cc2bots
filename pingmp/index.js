@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded",start)
+//window.addEventListener("DOMContentLoaded",start)
 
 function start(n,excludes){
   n=n>10||n<1?3:(n||3);
