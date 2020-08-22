@@ -10,7 +10,7 @@ displayIP(ip);
 (async function(){
 for(let s of ip){
 let results=[];
-for(let i=1;i<n;i++){
+for(let i=0;i<n;i++){
 let pin=await ping(s)
 results.push(pin)
 }
@@ -31,6 +31,26 @@ function ping(IP){
   //ofc their mc servers dont have https servers, thus erroring
   let a = new Date()
   return new Promise(r=>{
-  fetch("https://"+IP,{method:"no-cors"}).catch(_=>r(new Date()-a))
+  function ping(host, port, pong) {
+
+  var started = new Date().getTime();
+
+  var http = new XMLHttpRequest();
+
+  http.open("GET", "http://" + host + ":" + port, /*async*/true);
+  http.onreadystatechange = function() {
+    if (http.readyState == 4) {
+      var ended = new Date().getTime();
+      var milliseconds = ended - started;
+      r(milliseconds);
+    }
+  };
+  try {
+    http.send(null);
+  } catch(exception) {
+    // this is expected
+  }
+
+}
   })
 }
