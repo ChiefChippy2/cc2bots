@@ -9,6 +9,7 @@ Promise.all(poa).then(ress=>{
 Promise.all(ress.filter(x=>x.ok||x.status===200).map(x=>x.json())).then(allips=>{
 const ip=allips.filter(x=>x.Answer&&x.Answer[0].data).map(x=>x.Answer.map(y=>y.data)).map(x=>x).flat()
 displayIP(ip);
+window.count=1; //thead is 0
 (async function(){
 for(let s of ip){
 let results=[];
@@ -32,7 +33,7 @@ function displayIP(x){
 let htmls=x.map(ip=>`<tr><td>${ip}</td><td>...</td></tr>`)
   document.querySelector("tbody").innerHTML=htmls.join("")
 }
-let count=1; //thead is 0
+
 function displayPing(x,y){
   document.querySelectorAll("tr")[count].querySelectorAll("td")[1].innerHTML=y;
 count++
