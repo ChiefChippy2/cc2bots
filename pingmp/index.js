@@ -49,7 +49,7 @@ setTimeout(()=>r(999),999)
 
   http.open("GET", "https://" + IP + ":25565", /*async*/true);
   http.onreadystatechange = function() {
-    if (http.readyState == 2) {
+    if (this.readyState == 2) {
       var ended = new Date().getTime();
       var milliseconds = ended - started;
       r(milliseconds/4);
