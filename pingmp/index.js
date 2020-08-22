@@ -15,7 +15,7 @@ let pin=await ping(s)
 results.push(pin)
 }
 if(results.every(x=>x===999)) displayPing(s,"N/A");
-else displayPing(s,String(Math.floor(results.reduce((a,c)=>a+c))/n)+ms);
+else displayPing(s,String(Math.floor(results.reduce((a,c)=>a+c))/n)+"ms");
 }
 })()
 
@@ -32,7 +32,7 @@ let htmls=x.map(ip=>`<tr><td>${ip}</td><td>...</td></tr>`)
 }
 let count=1; //thead is 0
 function displayPing(x,y){
-  document.querySelectorAll("tr")[count].querySelectorAll("td")[1]=y;
+  document.querySelectorAll("tr")[count].querySelectorAll("td")[1].innerHTML=y;
 count++
 }
 function ping(IP){
