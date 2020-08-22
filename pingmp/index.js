@@ -14,7 +14,8 @@ for(let i=0;i<n;i++){
 let pin=await ping(s)
 results.push(pin)
 }
-displayPing(s,results.reduce((a,c)=>a+c)/n)
+if(results.every(x=>x===999)) displayPing(s,"N/A");
+else displayPing(s,String(Math.floor(results.reduce((a,c)=>a+c))/n)+ms);
 }
 })()
 
@@ -25,24 +26,30 @@ displayPing(s,results.reduce((a,c)=>a+c)/n)
 })
 }
 
-function displayIP(x){console.log(x)}
-function displayPing(x,y){console.log(x,y)}
+function displayIP(x){
+let htmls=x.map(ip=>`<tr><td>${ip}</td><td>...</td></tr>`)
+  document.querySelector("tbody").innerHTML=htmls.join("")
+}
+let count=1; //thead is 0
+function displayPing(x,y){
+  document.querySelectorAll("tr")[count].querySelectorAll("td")[1]=y;
+count++
+}
 function ping(IP){
   //ofc their mc servers dont have https servers, thus erroring
   let a = new Date()
   return new Promise(r=>{
-  function ping(host, port, pong) {
-
+setTimeout(()=>r(999),999)
   var started = new Date().getTime();
 
   var http = new XMLHttpRequest();
 
-  http.open("GET", "http://" + host + ":" + port, /*async*/true);
+  http.open("GET", "https://" + IP + ":25565", /*async*/true);
   http.onreadystatechange = function() {
     if (http.readyState == 4) {
       var ended = new Date().getTime();
       var milliseconds = ended - started;
-      r(milliseconds);
+      r(milliseconds/4);
     }
   };
   try {
@@ -51,6 +58,6 @@ function ping(IP){
     // this is expected
   }
 
-}
+
   })
 }
