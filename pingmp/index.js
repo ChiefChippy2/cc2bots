@@ -1,6 +1,8 @@
 window.addEventListener("DOMContentLoaded",start)
 
 function start(n,excludes){
+  n=n>10||n<1?3:(n||3);
+  excludes=excludes||[];
 let lon=["us","clans"]
 let poa=lon.filter(x=>!excludes.includes(x)).map(y=>fetch("https://dns.google.com/resolve?name="+y+".mineplex.com&type=a"))
 Promise.all(poa).then(ress=>{
