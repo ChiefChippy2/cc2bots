@@ -2,15 +2,17 @@
 <html>
 <head>
   <script src="index.js"></script>
-  <title>Mineplex Ping</title>
+  <title>Ping de Mineplex & Autres</title>
 </head>
 <body>
 <div>
-  <b>Disclaimer</b><p>We do not guarantee the precision of the results. The results are heavily dependant on the type of connection you are currently on. ( Bad WiFi can lead to higer ping ).</p>
-  <p>See Which IP you should use!</p><br>
-  <button onclick="start(parseInt(document.querySelector('#t').value)||1,[],document.querySelector('#s').value)">Click ME to start!</button><br>
-  <p>Custom Options</p><br>
-  <input id=s value="*.mineplex.com" plcaeholder="Hostname"/><br>
+  <b>Avertissement</b> <p> Nous ne garantissons pas la précision des résultats. Les résultats dépendent fortement du type de connexion sur laquelle vous êtes actuellement. (Un mauvais WiFi peut conduire à un ping plus élevé). </p>
+   <p> Découvrez quelle adresse IP vous devez utiliser pour vous connecter! </p> <br>
+  <button onclick="start(parseInt(document.querySelector('#t').value)||1,[],document.querySelector('#s').value)">Cliquez MOI pour commencer!</button><br>
+  <p>Paramètres</p><br>
+  <input plcaeholder="Addresse du serveur mc"/><br>
+  Ne remplissez pas cela si vous souhaitez connaitre le ping des serveurs du mineplex.
+  <br>
   Repeat <input id=t type=number max=10 min=1 /> times<br>
 <table>
 <thead>
