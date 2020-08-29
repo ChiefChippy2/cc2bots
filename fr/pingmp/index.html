@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="index.js"></script>
+  <title>Mineplex Ping</title>
+</head>
+<body>
+<div>
+  <b>Disclaimer</b><p>We do not guarantee the precision of the results. The results are heavily dependant on the type of connection you are currently on. ( Bad WiFi can lead to higer ping ).</p>
+  <p>See Which IP you should use!</p><br>
+  <button onclick="start(parseInt(document.querySelector('#t').value)||1,[],document.querySelector('#s').value)">Click ME to start!</button><br>
+  <p>Custom Options</p><br>
+  <input id=s value="*.mineplex.com" plcaeholder="Hostname"/><br>
+  Repeat <input id=t type=number max=10 min=1 /> times<br>
+<table>
+<thead>
+<td>IP</td>
+<td>Ping</td>
+</thead>
+<tbody>
+<tr><td>Loading IPs...</td><td>N/A</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
